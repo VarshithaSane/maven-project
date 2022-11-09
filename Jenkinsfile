@@ -19,11 +19,11 @@ pipeline {
             steps {
                 sh "git clone https://github.com/VarshithaSane/maven-project.git"
             }
-            post {
-                success {
-                    echo "Now Archiving."
-                    archiveArtifacts artifacts: '**/*.war'
-                }
+//             post {
+//                 success {
+//                     echo "Now Archiving."
+//                     archiveArtifacts artifacts: '**/*.war'
+//                 }
             }
         }
         stage('Build') {
