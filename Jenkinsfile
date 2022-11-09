@@ -24,7 +24,7 @@ pipeline {
 //                     echo "Now Archiving."
 //                     archiveArtifacts artifacts: '**/*.war'
 //                 }
-            }
+//             }
         }
         stage('Build') {
             steps {
